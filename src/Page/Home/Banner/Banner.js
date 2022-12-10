@@ -1,15 +1,18 @@
 import React from 'react';
-
+import banner from '../../../assests/banner.png';
+import { FaDownload } from "react-icons/fa";
+import Resume from '../../../assests/Hriday Haldar Resume (update2).pdf';
 const Banner = () => {
     return (
         <div>
             <div className="hero min-h-screen bg-slate-900">
-                <div className="hero-content flex-col lg:flex-row">
-                    <img src="https://placeimg.com/260/400/arch" className="max-w-sm rounded-lg shadow-2xl" />
+                <div className="hero-content flex-col lg:flex-row lg:gap-12">
+                    <img src={banner} alt='' className="max-w-sm  rounded-lg shadow-2xl" />
                     <div>
-                        <h1 className="text-5xl font-bold text-white">Box Office News!</h1>
-                        <p className="py-6 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <h4 className="text-xl font-bold text-white">Hello Everyone!</h4>
+                        <h1 className="py-6 text-white text-4xl font-bold">I'm <span className=' text-cyan-400'>Hriday Haldar</span>  </h1>
+                        <p className=' text-white'>I'm a front-end developer. I develop websites using MERN Technology.</p>
+                        <button className="btn btn-primary px-8 mt-3">Resume<a className='pl-2' href={Resume} download><FaDownload></FaDownload></a></button>
                     </div>
                 </div>
             </div>
