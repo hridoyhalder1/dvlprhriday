@@ -11,7 +11,7 @@ const Banner = () => {
                     <div>
                         <h4 className="text-xl font-bold text-white">Hello Everyone!</h4>
                         <h1 className="py-6 text-white text-4xl font-bold">I'm <span className=' text-cyan-400'>Hriday Haldar</span>  </h1>
-                        <p className=' text-white'>I'm a front-end developer. I develop websites using MERN Technology.</p>
+                        <p className=' text-white'>My name is Hriday Haldar. I am a front-end web developer, React Developer and MERN stack developer</p>
                         <button className="btn btn-primary px-8 mt-3">Resume<a className='pl-2' href={Resume} download><FaDownload></FaDownload></a></button>
                     </div>
                 </div>

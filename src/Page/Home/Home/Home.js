@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../Navbar/Navbar';
 import Banner from '../Banner/Banner';
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 import Project from '../Project/Project';
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <Project></Project>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };
