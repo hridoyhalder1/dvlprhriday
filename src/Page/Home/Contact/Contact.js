@@ -32,11 +32,17 @@ const Contact = () => {
                     Contact Me</h2>
                 <div className="hero min-h-screen bg-slate-900">
                     <div className="hero-content flex-col lg:flex-row-reverse gap-6">
-                        <div className="text-center lg:text-left text-white">
+                        <div data-aos="fade-left"
+                            data-aos-offset="300"
+                            data-aos-duration="5000"
+                            data-aos-easing="ease-in-sine" className="text-center lg:text-left text-white">
                             <iframe title='location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58690.19310623814!2d89.15852982214678!3d23.1651968916381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff108d87ea6d65%3A0x627d034ef93261cf!2z4Kav4Ka24KeL4Kaw!5e0!3m2!1sbn!2sbd!4v1670767317284!5m2!1sbn!2sbd" width="350" height="400" allowFullScreen="" loading="lazy" referrerPolicy='no-referrer-when-downgrade' className=' rounded-xl'></iframe>
 
                         </div>
-                        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-duration="5000"
+                            data-aos-easing="ease-in-sine" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                             <div className="card-body">
                                 <form action="" ref={form} onSubmit={sendEmail}>
                                     <div className="form-control">

@@ -48,7 +48,7 @@ const particlesLoaded = useCallback(async container => {
               },
               repulse: {
                 distance: 200,
-                duration: 0.4,
+                duration: 0.6,
               },
             },
           },
@@ -73,7 +73,7 @@ const particlesLoaded = useCallback(async container => {
                 default: "bounce",
               },
               random: false,
-              speed: 2,
+              speed: 1,
               straight: false,
             },
             number: {

@@ -13,10 +13,10 @@ const Project = () => {
             <h2 className=' text-4xl font-bold text-cyan-400 text-center mb-11'>Projects</h2>
             <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto justify-items-center gap-7 lg:justify-items-center'>
                 {/* card-1 */}
-                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card w-96 bg-base-100 shadow-xl " >
                     <PhotoProvider>
                         <PhotoView src={project1}>
-                            <figure><img src={project1} alt="project1" /></figure>
+                            <figure><img src={project1} alt="project1" data-aos="zoom-in" /></figure>
                         </PhotoView>
                     </PhotoProvider>
 
@@ -50,7 +50,7 @@ const Project = () => {
                 <div className="card w-96 bg-base-100 shadow-xl">
                     <PhotoProvider>
                         <PhotoView src={project2}>
-                            <figure><img src={project2} alt="project2" /></figure>
+                            <figure><img src={project2} alt="project2" data-aos="zoom-out" data-aos-duration="9000" /></figure>
                         </PhotoView>
                     </PhotoProvider>
                     <div className="card-body">
@@ -80,7 +80,7 @@ const Project = () => {
                 <div className="card w-96 bg-base-100 shadow-xl">
                     <PhotoProvider>
                         <PhotoView src={project3}>
-                            <figure><img src={project3} alt="project3" /></figure>
+                            <figure><img src={project3} alt="project3"data-aos="zoom-in-up" /></figure>
                         </PhotoView>
                     </PhotoProvider>
                     <div className="card-body">
