@@ -4,7 +4,8 @@ import github1 from '../../../assests/github1.png';
 import linkedin from '../../../assests/linkedin.png';
 import facebook from '../../../assests/facebook.png';
 import ScrollToTop from "react-scroll-to-top";
-import { MessengerChat } from "react-messenger-chat-plugin";
+import WhatsAppWidget from "react-whatsapp-chat-widget";
+import "react-whatsapp-chat-widget/index.css";
 
 
 
@@ -27,36 +28,35 @@ const Footer = () => {
                     <a href="https://www.facebook.com/hridaymarketer/" title="facebook icons"><img src={facebook} alt="" width="24" height="24" color='white' /></a>
 
                 </div>
-                {/* messenger */}
-                <MessengerChat
-                    pageId="100064708733507"
-                    language="sv_SE"
-                    themeColor={"red"}
-                    bottomSpacing={300}
-                    loggedInGreeting="loggedInGreeting"
-                    loggedOutGreeting="loggedOutGreeting"
-                    greetingDialogDisplay={"show"}
-                    debugMode={true}
-                    onMessengerShow={() => {
-                        console.log("onMessengerShow");
-                    }}
-                    onMessengerHide={() => {
-                        console.log("onMessengerHide");
-                    }}
-                    onMessengerDialogShow={() => {
-                        console.log("onMessengerDialogShow");
-                    }}
-                    onMessengerDialogHide={() => {
-                        console.log("onMessengerDialogHide");
-                    }}
-                    onMessengerMounted={() => {
-                        console.log("onMessengerMounted");
-                    }}
-                    onMessengerLoad={() => {
-                        console.log("onMessengerLoad");
-                    }}
-                />
+
             </footer>
+            {/* whatsapp */}
+            <WhatsAppWidget
+                phoneNo="+8801863901163"
+                position="right"
+                widgetWidth="300px"
+                widgetWidthMobile="260px"
+                autoOpen={true}
+                autoOpenTimer={5000}
+                messageBox={true}
+                messageBoxTxt="Hi Team, is there any related service available ?"
+                iconSize="40"
+                iconColor="white"
+                iconBgColor="#34B7F1"
+                // headerIcon="https://www.canva.com/design/DAFUX2Eabnw/4UP7hYXJnq3F8bRWRfCOcA/view?utm_content=DAFUX2Eabnw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                headerIconColor="pink"
+                headerTxtColor="black"
+                headerBgColor="tomato"
+                headerTitle="Hriday Haldar"
+                headerCaption="Online"
+                bodyBgColor="#0F172A"
+                chatPersonName="Support"
+                chatMessage={<>Hi there 👋 <br /><br /> How can I help you?</>}
+                footerBgColor="#0F172A"
+                btnBgColor="#0984e3"
+                btnTxtColor="white"
+                btnTxt="Start Chat"
+            />
         </div>
     );
 };
