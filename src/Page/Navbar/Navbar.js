@@ -17,6 +17,7 @@ const Navbar = () => {
                                 <li><Link to='/'>Home</Link></li>
                                 <li><Link to='#projects' smooth>Project</Link></li>
                                 <li><Link to='#contact' smooth>Contact</Link></li>
+                                <li><Link to='#about' smooth>About Me</Link></li>
                             </ul>
                         </div>
                         <Link to='/' className="btn btn-ghost normal-case text-xl">Dvlpr Hriday</Link>
@@ -26,6 +27,7 @@ const Navbar = () => {
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='#projects' smooth>Project</Link></li>
                             <li><Link to='#contact' smooth>Contact</Link></li>
+                            <li><Link to='#about' smooth>About Me</Link></li>
                         </ul>
                     </div>
                 </div>
