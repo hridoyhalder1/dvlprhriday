@@ -13,8 +13,8 @@ const Contact = () => {
 
         emailjs.sendForm('service_2vc66je', 'template_bm31jsg', form.current, 'ZvQBs8qiux-H5AM1K')
             .then((result) => {
-                console.log(result.text);
-                console.log('message send');
+                // console.log(result.text);
+                // console.log('message send');
                 toast.success('Submitted Successfully!');
                 sendForm.reset();
             }, (error) => {
@@ -49,20 +49,20 @@ const Contact = () => {
                                         <label className="label">
                                             <span className="label-text">Name</span>
                                         </label>
-                                        <input type="text" name="user_name" placeholder="name" className="input input-bordered" />
+                                        <input type="text" name="user_name" placeholder="name" className="input input-bordered" required/>
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text">Email</span>
                                         </label>
-                                        <input type="email" name="user_email" placeholder="email" className="input input-bordered" />
+                                        <input type="email" name="user_email" placeholder="email" className="input input-bordered" required/>
 
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text">Message</span>
                                         </label>
-                                        <textarea name="message" className='input input-bordered' placeholder='your message...' />
+                                        <textarea name="message" className='input input-bordered' placeholder='your message...' required />
 
                                     </div>
                                     <div className="form-control mt-6">

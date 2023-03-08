@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPhone } from 'react-icons/fa';
 import { BrowserRouter } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 // import logo from '../../assests/HH.png';
@@ -7,7 +8,7 @@ const Navbar = () => {
     return (
         <div >
             <BrowserRouter>
-                <div className="navbar bg-slate-800 text-white ">
+                <div className="navbar bg-slate-800 text-white">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -22,6 +23,10 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <Link to='/' className="btn btn-ghost normal-case text-xl">Dvlpr Hriday</Link>
+                    </div>
+                    <div className='navbar-end md:navbar-end lg:navbar-center'>
+                        <FaPhone className='mr-1'/>
+                        <a href="tel:+8801863901163">+8801863901163</a>
                     </div>
                     <div className="navbar-end hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
