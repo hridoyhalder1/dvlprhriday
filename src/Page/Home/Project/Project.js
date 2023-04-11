@@ -10,8 +10,8 @@ const Project = () => {
     return (
         <div id='projects' className='mt-14'>
             <h2 className=' text-4xl font-bold text-cyan-400 text-center mb-11'>Projects</h2>
-            <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto justify-items-center gap-7 lg:justify-items-center'>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className=' grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 mx-5 md:mx-auto justify-items-center gap-7 lg:justify-items-center'>
+                <div className="card w-96 bg-base-100 shadow-xl">
                     <PhotoProvider>
                         <PhotoView src={project2}>
                             <figure><img src={project2} alt="project2" data-aos="zoom-out" data-aos-duration="9000" /></figure>
@@ -77,13 +77,13 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
-               
-                
+
+
                 {/* card-3 */}
                 <div className="card w-96 bg-base-100 shadow-xl">
                     <PhotoProvider>
                         <PhotoView src={project3}>
-                            <figure><img src={project3} alt="project3"data-aos="zoom-in-up" /></figure>
+                            <figure><img src={project3} alt="project3" data-aos="zoom-in-up" /></figure>
                         </PhotoView>
                     </PhotoProvider>
                     <div className="card-body">

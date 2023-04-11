@@ -3,12 +3,13 @@ import { FaPhone } from 'react-icons/fa';
 import { BrowserRouter } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 // import logo from '../../assests/HH.png';
+import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <div >
+        <div className='sticky top-0' >
             <BrowserRouter>
-                <div className="navbar bg-slate-800 text-white">
+                <div className="navbar bg-slate-800 text-white  ">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,9 +25,13 @@ const Navbar = () => {
                         </div>
                         <Link to='/' className="btn btn-ghost normal-case text-xl">Dvlpr Hriday</Link>
                     </div>
-                    <div className='navbar-end md:navbar-end lg:navbar-center'>
-                        <FaPhone className='mr-1'/>
-                        <a href="tel:+8801863901163">+8801863901163</a>
+                    <div className='navbar-end md:navbar-end lg:navbar-center mr-5 lg:mr-0'>
+                        <div className='hidden md:block lg:block'>
+                            <a href="tel:+8801863901163" className='flex items-center '><FaPhone className='mr-2'></FaPhone>+8801863901163</a>
+                        </div>
+                        <FaPhone className='block md:hidden lg:hidden icon'>
+                            <a href='tel:+8801863901163'>+8801863901163</a>
+                        </FaPhone>
                     </div>
                     <div className="navbar-end hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">

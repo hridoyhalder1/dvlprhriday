@@ -36,7 +36,11 @@ const Banner = () => {
                             <a href="https://www.facebook.com/hridaymarketer/" title="facebook icons"><img src={facebook} alt="" width="24" height="24" color='white' /></a>
 
                         </div>
-                        <button className="btn btn-primary px-8 mt-3">Resume<a className='pl-2' href={Resume} download><FaDownload></FaDownload></a></button>
+                        <div className='btn btn-primary' >
+                            <a href='https://drive.google.com/file/d/1IdPvkLkBjQ88WhraEXv1H5eZjgy5JEbx/view?usp=share_link' className='flex'>RESUME<FaDownload className='ml-2'></FaDownload></a>
+                            
+                        </div>
+                        
                     </div>
                 </div>
             </div>

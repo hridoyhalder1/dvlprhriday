@@ -1,0 +1,14 @@
+.sticky{
+    z-index: 999;
+}
+.icon{
+    height: 2em;
+    width: 2em;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: rgba(240, 217, 222, 0.767);
+    padding: 10px;
+    border-radius: 100%;
+}
